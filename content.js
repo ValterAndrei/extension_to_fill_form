@@ -77,7 +77,15 @@ function generateCEP(){
 }
 
 function showToast(fields){
-  if (fields > 0){
+  if (fields == 1){
+    $.toast({
+      heading: 'Sucesso!',
+      text: fields+' campo foi preenchido.',
+      showHideTransition: 'slide',
+      icon: 'success',
+      position: 'bottom-right'
+    })
+  } else if (fields > 1) {
     $.toast({
       heading: 'Sucesso!',
       text: fields+' campos foram preenchidos.',
