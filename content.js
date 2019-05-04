@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(
       });
 
       $("input[name*='phone']").each(function(){
-        $(this).val(chance.phone({ formatted: false }));
+        $(this).val(generatePhoneNumber());
         filled_fields += 1;
       });
 
@@ -43,6 +43,16 @@ chrome.runtime.onMessage.addListener(
     }
   }
 );
+
+function generatePhoneNumber(){
+  let ddd            = Math.floor(10 + Math.random() * 90);
+  let initial_number = Math.floor(10000 + Math.random() * 90000);
+  let ending_number  = Math.floor(1000 + Math.random() * 9000);
+  
+  phone = '(' + ddd + ') ' + initial_number + '-' + ending_number;
+  
+  return phone;
+}
 
 function generateCNPJ() {
   let n = 9;
