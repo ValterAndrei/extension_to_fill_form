@@ -8,4 +8,4 @@
 
 4- Change to "Developer mode"
 
-5- Click in "load without compression" and import folder
+5- Click in "Load unpacked extension" and import folder
