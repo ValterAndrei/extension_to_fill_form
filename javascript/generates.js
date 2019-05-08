@@ -1,4 +1,4 @@
-function generateCNPJ() {
+function generateCNPJ(){
   let n = 9;
   let n1  = Math.round(Math.random()*n);
   let n2  = Math.round(Math.random()*n);
@@ -25,7 +25,7 @@ function generateCNPJ() {
 function generateCEP(){
   let cep_starting = Math.floor(10000 + Math.random() * 90000);
   let cept_ending  = Math.floor(100 + Math.random() * 900);
-  let cep = cep_starting + "-" + cept_ending
+  let cep = cep_starting + '-' + cept_ending
 
   return cep;
 }
@@ -38,4 +38,16 @@ function generatePhoneNumber(){
   phone = '(' + ddd + ') ' + initial_number + '-' + ending_number;
 
   return phone;
+}
+
+function generateDate(){
+  start = new Date(1950, 1, 1);
+  end   = new Date(2000, 1, 1);
+  date  = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+
+  month = ('0' + (date.getMonth() + 1)).slice(-2);
+  day   = ('0' + date.getDate()).slice(-2);
+  year  = date.getFullYear();
+
+  return day + '/' + month + '/' +  year;
 }

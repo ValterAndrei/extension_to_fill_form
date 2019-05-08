@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(
       });
 
       $("input[name*='date'], input[name*='birthday']").each(function(){
-        $(this).val(chance.date({string: true, american: false}));
+        $(this).val(generateDate());
         filled_fields += 1;
       });
 
