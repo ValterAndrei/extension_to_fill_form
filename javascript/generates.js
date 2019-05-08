@@ -19,35 +19,48 @@ function generateCNPJ(){
   d2 = 11 - ( Math.round(d2 - (Math.floor(d2/11)*11)) );
   if (d2>=10) d2 = 0;
 
-  return ''+n1+n2+'.'+n3+n4+n5+'.'+n6+n7+n8+'/'+n9+n10+n11+n12+'-'+d1+d2;
+  let cnpj = ''+n1+n2+'.'+n3+n4+n5+'.'+n6+n7+n8+'/'+n9+n10+n11+n12+'-'+d1+d2;
+
+  return cnpj;
+}
+
+function generateRG(){
+  let start = Math.floor(10 + Math.random() * 90);
+  let half  = Math.floor(100 + Math.random() * 900);
+  let end   = Math.floor(100 + Math.random() * 900);
+  let digit = Math.floor(Math.random() * 10);
+  let rg    = start + '.' + half + '.' +  end + '-' +  digit;
+
+  return rg;
 }
 
 function generateCEP(){
-  let cep_starting = Math.floor(10000 + Math.random() * 90000);
-  let cept_ending  = Math.floor(100 + Math.random() * 900);
-  let cep = cep_starting + '-' + cept_ending
+  let start = Math.floor(10000 + Math.random() * 90000);
+  let end   = Math.floor(100 + Math.random() * 900);
+  let cep   = start + '-' + end;
 
   return cep;
 }
 
 function generatePhoneNumber(){
-  let ddd            = Math.floor(10 + Math.random() * 90);
-  let initial_number = Math.floor(10000 + Math.random() * 90000);
-  let ending_number  = Math.floor(1000 + Math.random() * 9000);
-
-  phone = '(' + ddd + ') ' + initial_number + '-' + ending_number;
+  let ddd   = Math.floor(10 + Math.random() * 90);
+  let start = Math.floor(10000 + Math.random() * 90000);
+  let end   = Math.floor(1000 + Math.random() * 9000);
+  let phone = '(' + ddd + ') ' + start + '-' + end;
 
   return phone;
 }
 
 function generateDate(){
-  start = new Date(1950, 1, 1);
-  end   = new Date(2000, 1, 1);
-  date  = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+  let start        = new Date(1950, 1, 1);
+  let end          = new Date(2000, 1, 1);
+  let random_date  = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 
-  month = ('0' + (date.getMonth() + 1)).slice(-2);
-  day   = ('0' + date.getDate()).slice(-2);
-  year  = date.getFullYear();
+  let month = ('0' + (random_date.getMonth() + 1)).slice(-2);
+  let day   = ('0' + random_date.getDate()).slice(-2);
+  let year  = random_date.getFullYear();
 
-  return day + '/' + month + '/' +  year;
+  let date = day + '/' + month + '/' +  year;
+
+  return date;
 }

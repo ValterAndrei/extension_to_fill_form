@@ -29,6 +29,11 @@ chrome.runtime.onMessage.addListener(
         filled_fields += 1;
       });
 
+      $("input[name*='rg']").each(function(){
+        $(this).val(generateRG());
+        filled_fields += 1;
+      });
+
       $("input[name*='cnpj']").each(function(){
         $(this).val(generateCNPJ());
         filled_fields += 1;
