@@ -52,9 +52,9 @@ function generatePhoneNumber(){
 }
 
 function generateDate(){
-  let start        = new Date(1950, 1, 1);
-  let end          = new Date(2000, 1, 1);
-  let random_date  = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+  let start       = new Date(1950, 1, 1);
+  let end         = new Date(2000, 1, 1);
+  let random_date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 
   let month = ('0' + (random_date.getMonth() + 1)).slice(-2);
   let day   = ('0' + random_date.getDate()).slice(-2);
