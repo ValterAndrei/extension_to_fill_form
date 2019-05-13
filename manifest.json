@@ -28,5 +28,10 @@
     "default_icon": "images/icon.png",
     "default_title": "Preencher formulários"
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+  "icons": {
+    "16":  "images/icon.png",
+    "48":  "images/icon.png",
+    "128": "images/icon.png"
+  }
 }
