@@ -1,5 +1,9 @@
 # Install
 
+[Chrome web store](https://chrome.google.com/webstore/detail/preencher-formul%C3%A1rios/mkkfnafkfedniajmppmafeaaihhcbejb?hl=pt-BR)
+
+
+<!--
 1- Clone this repository
 
 2- Extract folder
@@ -9,3 +13,4 @@
 4- Change to "Developer mode"
 
 5- Click in "Load unpacked extension" and import folder
+-->
