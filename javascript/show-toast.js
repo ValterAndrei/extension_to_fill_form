@@ -21,7 +21,7 @@ function showToast(fields){
       text: 'Nenhum campo foi preenchido.',
       showHideTransition: 'slide',
       icon: 'info',
-      position: 'bottom-left'
+      position: 'bottom-right'
     })
   }
 }

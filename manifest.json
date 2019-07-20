@@ -4,7 +4,7 @@
   "short_name": "PF",
   "description": "Extensão criada para preencher formulários com dados aleatórios.",
   "author": "Valter Andrei",
-  "version": "1.1",
+  "version": "1.2",
   "background": {
     "scripts": ["javascript/background.js"]
   },
