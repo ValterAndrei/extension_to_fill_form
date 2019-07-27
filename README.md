@@ -1,6 +1,6 @@
 # Install
 
-[Chrome web store](https://chrome.google.com/webstore/detail/preencher-formul%C3%A1rios/mkkfnafkfedniajmppmafeaaihhcbejb?hl=pt-BR)
+[Chrome web store](https://chrome.google.com/webstore/detail/preencher-formulários/hjmlnbpfakglpijfjgclhdlipbjfegjp?hl=pt-BR)
 
 
 <!--
